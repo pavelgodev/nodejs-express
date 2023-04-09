@@ -30,7 +30,7 @@ class Card{
 
         return new Promise((resolve, reject)=>{
 
-            fs.writeFile(p, JSON.stringify(card), (err, content)=>{
+            fs.writeFile(p, JSON.stringify(card), (err)=>{
                 if(err){
                     reject(err)
                 }
