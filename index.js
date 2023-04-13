@@ -32,7 +32,7 @@ async function start() {
     try {
         const url = `mongodb+srv://pavelmail07:IxQhklVEuuIn2YQr@cluster0.2awc9ux.mongodb.net/shop`
 
-        mongoose.connect(url, {
+        await mongoose.connect(url, {
             useNewUrlParser: true
         })
 
